@@ -1,0 +1,498 @@
+:root {
+    /* all */
+    --body-bg: linear-gradient(90deg,
+    rgba(255, 255, 255, 1) 0%, 
+    rgba(237, 237, 237, 1) 10%,
+    rgba(237, 237, 237, 1) 90%, 
+    rgba(255, 255, 255, 1) 100%);
+
+    --body-text: #000000;
+    /* menu */
+    --menu-border-color: #fff;
+    --menu-button: #fff;
+    /* header */
+    --header-box: -7px -3px 20px 3px rgba(34, 60, 80, 0.6) inset,
+    0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    /* buttons */
+    /* Технологии */
+    /* Проекты */
+    /* Отзывы */
+    --reviews-text-color: #000000;
+    --reviews-bg: linear-gradient(#dbdbdb, #dbdbdb);
+    --reviews-box-border: linear-gradient(0deg,
+    rgb(158, 76, 76) 0%, 
+    rgba(0, 0, 0, 1) 25%, 
+    rgb(158, 76, 76) 50%, 
+    rgba(0, 0, 0, 1) 75%, 
+    rgb(158, 76, 76) 100%);
+    --reviews-ava-border: linear-gradient(180deg,
+    rgb(158, 76, 76) 0%,
+    rgb(26, 26, 26) 20%, 
+    rgb(158, 76, 76) 42%, 
+    rgb(0, 0, 0) 65%, 
+    rgb(158, 76, 76) 85%, 
+    rgb(0, 0, 0) 100%);
+    --reviews-color-link: #0d0d0d;
+
+    /* Услуги */
+    --categoey-item: #dbdbdb;
+    
+    --button-slider: #363636;
+    --logo-bg: rgb(139, 94, 150);
+}
+[dark] {
+    /* all */
+    --body-bg: linear-gradient(90deg,
+    rgba(25, 25, 25, 1) 0%, 
+    rgba(0, 0, 0, 1) 20%, 
+    rgba(0, 0, 0, 1) 80%, 
+    rgba(25, 25, 25, 1) 100%);
+
+    --body-text: #fff;
+    /* menu */
+    --menu-border-color: #000;
+    --menu-button: #000;
+    /* header */
+    --header-box: -7px -3px 20px 3px rgba(79, 79, 79, 0.6) inset,
+    0px 5px 10px 2px rgba(79, 79, 79, 0.2);
+    /* buttons */
+    /* Технологии */
+    /* Проекты */
+    /* Отзывы */
+    --reviews-text-color: #585858;
+    --reviews-bg: linear-gradient(#111111, #111111);
+    --reviews-box-border: linear-gradient(0deg,
+    rgba(161, 0, 0, 1) 0%, 
+    rgba(0, 0, 0, 1) 25%, 
+    rgba(161, 0, 0, 1) 50%, 
+    rgba(0, 0, 0, 1) 75%, 
+    rgba(161, 0, 0, 1) 100%);
+    --reviews-ava-border: linear-gradient(180deg,
+    rgba(161, 0, 0, 1) 0%,
+    rgba(26, 26, 26, 1) 20%, 
+    rgba(161, 0, 0, 1) 42%, 
+    rgba(0, 0, 0, 1) 65%, 
+    rgba(161, 0, 0, 1) 85%, 
+    rgba(0, 0, 0, 1) 100%);
+    --reviews-color-link: #9A0000;
+    /* Услуги */
+    
+
+    --categoey-item: #1b1b1b;
+    --button-slider: #000;
+    --logo-bg: rgb(75, 43, 83);
+}
+
+body {
+    /* background-color: rgb(37, 37, 37); */
+    background: var(--body-bg);
+    color:  var(--body-text);
+    font-family: 'Stroke(RUS BY LYAJKA)';
+}
+a, button {
+    color: var(--body-text);
+    text-decoration: none;
+}
+.zxc{
+    margin: 0 auto;
+    width: 1288px;
+    padding-bottom: 90px;
+}
+.h2{
+    font-size: 64px;
+    font-weight: 600;
+}
+.box-items{
+    margin-top: 30px;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden;
+    max-height: 1000px;
+    opacity: 1;
+}
+.qqq{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.box-items.hidden {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0px;
+}
+.toggle-header {
+    cursor: pointer;
+    user-select: none;
+}
+.indicator {
+    font-weight: bold;
+    margin-left: 8px;
+    transition: opacity 0.2s ease;
+}
+#Technologies, #Projects, #Reviews, #Services{
+    scroll-margin-top: 60px;
+}
+
+/* -----| Меню |----- */
+.menu{
+    z-index: 1000;
+    top: 0;
+    position: sticky;
+
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin: 0;
+
+    /* background-color: #1111117d; */
+    border: 1px solid var(--menu-border-color);
+    border-radius: 20px;
+
+
+    background: rgba(255, 255, 255, 0.15); /* полупрозрачный белый фон */
+    border-radius: 20px;                   /* скруглённые углы */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* тонкая светлая рамка */
+
+    backdrop-filter: blur(10px);           /* размытие фона за блоком */
+    -webkit-backdrop-filter: blur(10px);   /* для Safari */
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    background-color: var(--logo-bg);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 1px;
+}
+.logo-img{
+    height: 48px;
+    width: 48px;
+}
+.menu_box-navigation{
+    display: flex;
+    column-gap: 15px;
+}
+.button-menu_img{
+    height: 28px;
+}
+/* ------------ */
+.box-button{
+    display: flex;
+    column-gap: 15px;
+}
+.button-menu{
+    display: block;
+    background-color: var(--menu-button);
+    padding: 10px;
+
+    border: none;
+    
+    transition: 1s;
+    border-radius: 5px;
+    
+}
+
+
+/* -----| header |----- */
+.header{
+    display: flex;
+    column-gap: 20px;
+    width: 100%;
+    font-size: 32px;
+}
+.header-foto{
+    width: 600px;
+}
+.header-foto-img{
+    width: 100%;
+    height: 100%;
+}
+.header-text-box{
+    max-width: 600px;
+    padding-left: 9px;
+    box-shadow: var(--header-box);
+}
+.ul{
+    list-style: disc;
+    padding: 0 0 0 30px;
+}
+.text-H{
+    font-size: 48px;
+}
+
+
+/* -----| Buttons |----- */
+.container-button{
+    margin-top: 30px;
+    height: 70px;
+    /* background-color: darkolivegreen; */
+
+    display: flex;
+    justify-content: end;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.container-button-item{
+    background-color: rgb(67, 67, 67);
+    width: 130px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+}
+.container-button-item_img{
+    height: 70px;
+}
+.tg {
+    background-color: #64b2ed;
+}
+.github {
+    background-color: #f0f0f0;
+}
+
+
+
+/* -----| Technologies |----- */
+.container{
+    margin-top: 30px;
+}
+
+.line{
+    height: 6px;
+    border-radius: 10px;
+    background-color: var(--body-text);
+}
+
+.box-skills{
+    display: flex;
+    column-gap: 48px;
+    row-gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.box-skills-item{
+    background-color: var(--categoey-item);
+    border-radius: 20px;
+    width: 620px;
+    height: 104px;
+    padding: 20px;
+
+    display: flex;
+    column-gap: 20px;
+}
+
+.box-skills-item_box-img{
+    width: 64px;
+    height: 64px;
+}
+
+.box-skills-item_img{
+}
+
+.box-skills-item_box-text{
+    display: flex;
+    flex-direction: column;
+}
+.skill-name{
+    font-size: 24px;
+    position: relative;
+}
+
+.tag{
+    position: absolute;
+    margin-left: 7px;
+    margin-top: -7px;
+    padding: 2px 7px;
+    border-radius: 5px;
+
+    font-size: 14px;
+    color: #000;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 10px 2px rgba(34, 60, 80, 0.3);
+}
+.lvl_1{
+    background-color: #A43B3B;
+}
+.lvl_2{
+    background-color: #A4673B;
+}
+.lvl_3{
+    background-color: #3BA44B;
+}
+
+.skill-description{
+    font-size: 14px;
+}
+
+#search-input {
+    padding: 3px 6px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+
+/*  */
+
+.box-projects{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-projects{
+    flex: 0 0 360px;
+    height: 340px;
+
+    flex-shrink: 0;
+    text-decoration: none;
+    color: var(--body-text);
+    background-color: var(--categoey-item);
+}
+.card-projects_box-img{
+    height: 200px;
+    overflow: hidden;
+}
+.card-projects_img{
+    width: 100%;
+    object-fit: cover;
+}
+.card-projects_box-text{
+    height: 140px;
+    padding: 5px 10px 10px 10px;
+}
+.h3{
+    font-size: 32px;
+    font-weight: 400;
+}
+.p{
+    font-size: 20px;
+    height: 81px;
+}
+.button-slider {
+    height: 44px;
+    width: 44px;
+    background-color: var(--button-slider);
+    border: none;
+    border-radius: 10px;
+}
+.left{}
+.right{
+    transform: rotate(180deg);
+}
+.button-slider-img{}
+
+.slider-track{
+    display: flex;
+    column-gap: 30px;
+    transition: transform 0.5s ease;
+}
+/*  */
+.box-reviews{
+    display: flex;
+    column-gap: 25px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.reviews-card {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.box-message{
+    color: var(--reviews-text-color);
+    width: 1150px;
+    height: 380px;
+    background: 
+        var(--reviews-bg) padding-box, 
+        var(--reviews-box-border) border-box;
+    border: 8px solid transparent;
+    border-radius: 35px;
+
+    padding: 25px 60px 140px 60px;
+    position: relative;
+}
+.ava{
+    position: absolute;
+    bottom: -60px;
+    left: 60px;
+    width: 200px;
+    height: 200px;
+
+
+    background: 
+        url(/images/python.jpg) padding-box, 
+        var(--reviews-ava-border) border-box;
+    border: 8px solid transparent;
+    background-position: center;
+    background-size: cover;
+
+    border-radius: 100px;
+
+    background-color: #A43B3B;
+}
+.ava_img{
+    border-radius: 100px;
+}
+
+.user-link{
+    background-color: var(--categoey-item);
+    height: 55px;
+
+    border-radius: 0 25px 0 25px;
+    padding: 0 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: var(--reviews-color-link);
+}
+.box-message_text{
+    height: 156px;
+    font-size: 24px;
+}
+.box-message_h3{
+    font-size: 36px;
+}
+
+/* ------------- */
+.box-services{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 44px;
+}
+
+.item-services{
+    height: 340px;
+    width: 400px;
+    background-color: var(--categoey-item);
+}
+
+.item-services_box-img{
+    height: 200px;
+}
+
+.item-services_img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-services_box-name{
+    height: 140px;
+    padding: 5px 10px 10px;
+}
+
+.item-services_name{
+    height: 125px;
+    font-size: 32px;
+}
