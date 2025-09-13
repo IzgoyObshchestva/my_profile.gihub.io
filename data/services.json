@@ -1,0 +1,14 @@
+[
+    {
+        "name": { "ru": "Разработка тг бота", "en": "Development of tg bot" },
+        "image": "images/qwe.gif"
+    },
+    {
+        "name": { "ru": "Разработка backend", "en": "Backend development" },
+        "image": "images/qwe.gif"
+    },
+    {
+        "name": { "ru": "Разработка парсера", "en": "Parser development" },
+        "image": "images/qwe.gif"
+    }
+]

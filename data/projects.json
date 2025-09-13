@@ -1,0 +1,34 @@
+[
+    {
+        "name": { "ru": "Сайт визитка", "en": "Business card website" },
+        "image": "images/zxc.jpg",
+        "info": {
+        "ru": "Этот сайт я сделал сам",
+        "en": "I made this site myself"
+        }
+    },
+    {
+        "name": { "ru": "Проект2", "en": "Projects2" },
+        "image": "images/zxc.jpg",
+        "info": {
+        "ru": "Ахуенный тг бот",
+        "en": "Ахуенный тг бот"
+        }
+    },
+    {
+        "name": { "ru": "Проект3", "en": "Projects3" },
+        "image": "images/zxc.jpg",
+        "info": {
+        "ru": "Ахуенный тг бот",
+        "en": "Ахуенный тг бот"
+        }
+    },
+    {
+        "name": { "ru": "Проект4", "en": "Projects4" },
+        "image": "images/zxc.jpg",
+        "info": {
+        "ru": "Ахуенный тг бот",
+        "en": "Ахуенный тг бот"
+        }
+    }
+]

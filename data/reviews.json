@@ -1,0 +1,11 @@
+[
+    {
+        "name": { "ru": "Сайт визитка", "en": "Сайт визитка" },
+        "image": "images/reviews_img_1.jpg",
+        "info": {
+        "ru": "ого, мне очень понравился дизайн сделанного сайта",
+        "en": "wow, i really liked the design of the website you made"
+        },
+        "user_name": "mepwelo"
+    }
+]
