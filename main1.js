@@ -152,15 +152,15 @@ function applyTheme() {
     if (styleMode !== 'dark') {
         document.body.setAttribute('dark', '');
         localStorage.setItem('styleMode', 'dark');
-        imageElement.src = '/images/light_theme.png';
-        buttonMenuBurgerIMG.src = '/images/burger_menu_icon_light.png';
-        button_close.src = '/images/close_menu_icon_darker.png';
+        imageElement.src = 'images/light_theme.png';
+        buttonMenuBurgerIMG.src = 'images/burger_menu_icon_light.png';
+        button_close.src = 'images/close_menu_icon_darker.png';
     } else {
         document.body.removeAttribute('dark');
         localStorage.setItem('styleMode', null);
-        imageElement.src = '/images/darker_theme.png';
-        buttonMenuBurgerIMG.src = '/images/burger_menu_icon_darker.png';
-        button_close.src = '/images/close_menu_icon_light.png';
+        imageElement.src = 'images/darker_theme.png';
+        buttonMenuBurgerIMG.src = 'images/burger_menu_icon_darker.png';
+        button_close.src = 'images/close_menu_icon_light.png';
     }
 }
 themeToggle.addEventListener("click", () => {
