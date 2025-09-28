@@ -52,5 +52,23 @@
       "ru": "Очень базове знания на уровне чтения и не большого исправления.",
       "en": "Очень базове знания на уровне чтения и не большого исправления."
     }
+  },
+  {
+    "name": { "ru": "Aiogram 3", "en": "Aiogram 3" },
+    "level": { "ru": "Базовый", "en": "Basic" },
+    "image": "https://docs.aiogram.dev/en/v3.22.0/_static/logo.png",
+    "info": {
+      "ru": "Библиотека Python для создания телеграм ботов.",
+      "en": "Python library for creating Telegram bots."
+    }
+  },
+  {
+    "name": { "ru": "PySide6", "en": "PySide6" },
+    "level": { "ru": "Базовый", "en": "Basic" },
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Pyside.png",
+    "info": {
+      "ru": "Библиотека Python для создания десктопных приложений.",
+      "en": "A Python library for creating desktop applications."
+    }
   }
 ]
