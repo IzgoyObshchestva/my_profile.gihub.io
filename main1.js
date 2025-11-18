@@ -120,31 +120,6 @@ function renderProjects() {
     });
 }
 
-const reviewsContainer = document.querySelector(".qw");
-function renderReviews() {
-    reviewsContainer.innerHTML = "";
-
-    reviewsData.forEach(zxc => {
-    const card = document.createElement("div");
-    card.className = "reviews-card";
-
-    card.innerHTML = `
-        <div class="box-message">
-            <h3 class="box-message_h3">${zxc.name[currentLang]}</h3>
-            <p class="box-message_text">
-                ${zxc.info[currentLang]}
-            </p>
-            <div class="ava">
-                <img class="ava_img" src="${zxc.image}" alt="">
-            </div>
-        </div>
-        <div class="user-link"><span>${zxc.user_name}</span></div>
-    `;
-
-    reviewsContainer.appendChild(card);
-    });
-}
-
 
 // Тема
 function applyTheme() {
@@ -177,7 +152,6 @@ function toggleLanguage(qwe = true) {
     renderSkills();
     renderServices();
     renderProjects();
-    renderReviews();
 
     setLanguageText();
     initProjectsSlider();
@@ -193,15 +167,11 @@ function setLanguageText() {
     const titleProjects = document.getElementById("Projects");
     const Projects_name = titleProjects.querySelector(".container-name");
 
-    const titleReviews = document.getElementById("Reviews");
-    const Reviews_name = titleReviews.querySelector(".container-name");
-
     const titleServices = document.getElementById("Services");
     const Services_name = titleServices.querySelector(".container-name");
 
     Technologies_name.textContent = currentLang === "ru" ? "Технологии" : "Technologies";
     Projects_name.textContent = currentLang === "ru" ? "Проекты" : "Projects";
-    Reviews_name.textContent = currentLang === "ru" ? "Отзывы" : "Reviews";
     Services_name.textContent = currentLang === "ru" ? "Услуги" : "Services";
 
     const searchTechnologies = document.getElementById('search-input')
@@ -220,18 +190,10 @@ function setLanguageText() {
 
     const header_box = document.querySelector(".header-text-box");
     const list_item_text = header_box.querySelectorAll(".text");
-    const qwe_item_text = header_box.querySelector(".qwe");
-    const list_item_li = header_box.querySelectorAll(".li");
 
-    qwe_item_text.textContent = currentLang === "ru" ? "Там же вы можете увидеть:" : "There you can also see:";
-
-    list_item_li[0].textContent = currentLang === "ru" ? "примеры работ / проекты" : "work examples / projects";
-    list_item_li[1].textContent = currentLang === "ru" ? "услуги которые я предоставляю" : "services I provide";
-    list_item_li[2].textContent = currentLang === "ru" ? "отзывы для кого делал что-либо" : "reviews for whom I have done something";
-
-    list_item_text[0].textContent = currentLang === "ru" ? "Приветствую вас на моём профиле" : "Welcome to my profile";
-    list_item_text[1].textContent = currentLang === "ru" ? "Я разработчик, технологии с которыми я работаю или работал можно посмотреть ниже." : "I am a developer, the technologies I work with or worked with can be seen below.";
-    list_item_text[3].textContent = currentLang === "ru" ? "Я обожаю программирование, делаю для себя что-либо и для вас могу. Пишите)" : "I love programming, I do something for myself and I can do it for you. Write)";
+    console.log(list_item_text)
+    list_item_text[0].textContent = currentLang === "ru" ? "Обо мне:" : "About me:";
+    list_item_text[1].textContent = currentLang === "ru" ? "Программирую с настоящим кайфом — особенно когда получается создать что-то новое и полезное. К коду подхожу ответственно: тестирую, рефакторю, пока не станет идеально. Обожаю разбираться в незнакомых технологиях ради решения сложных задач. Мечтаю работать в команде, где люди поддерживают друг друга и вместе делают продукты, которыми можно гордиться." : "I truly enjoy programming, especially when I create something new and useful. I approach my code responsibly: I test and refactor until it's perfect. I love figuring out unfamiliar technologies to solve complex problems. I dream of working in a team where people support each other and together create products they can be proud of.";
 }
 
 
@@ -339,55 +301,6 @@ function initProjectsSlider() {
     });
 
     render(); // первый рендер
-}
-
-function initReviewsSlider() {
-    const containerReviews = document.querySelector(".box-reviews");
-    const cardsReviews = Array.from(containerReviews.querySelectorAll(".reviews-card"));
-    const leftBtnReviews = containerReviews.querySelector(".button-slider.left");
-    const rightBtnReviews = containerReviews.querySelector(".button-slider.right");
-
-    let IndexReviews = 0; // индекс первого показываемого элемента
-    const totalReviews = cardsReviews.length;
-
-    // показывать/скрывать стрелки
-    if (totalReviews < 2) {
-        leftBtnReviews.style.display = "none";
-        rightBtnReviews.style.display = "none";
-    }
-
-
-    function renderReviews() {
-        cardsReviews.forEach((card, i) => {
-            // вычисляем индекс "окна" с учетом зацикливания
-            if (i === IndexReviews) {
-                card.style.display = "flex";
-            } else {
-                card.style.display = "none";
-            }
-        });
-
-    }
-
-    leftBtnReviews.addEventListener("click", () => {
-        IndexReviews = IndexReviews - 1
-
-        if (IndexReviews < 0) {
-            IndexReviews = totalReviews - 1
-        }
-        renderReviews();
-    });
-
-    rightBtnReviews.addEventListener("click", () => {
-        IndexReviews = IndexReviews + 1
-
-        if (IndexReviews > totalReviews - 1) {
-            IndexReviews = 0
-        }
-        renderReviews();
-    });
-
-    renderReviews(); // первый рендер
 }
 
 
