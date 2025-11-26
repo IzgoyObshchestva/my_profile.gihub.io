@@ -8,27 +8,27 @@
         }
     },
     {
-        "name": { "ru": "Проект2", "en": "Projects2" },
+        "name": { "ru": "Магазин одежды", "en": "Clothing store" },
         "image": "images/zxc.jpg",
         "info": {
-        "ru": "Крутой бот",
-        "en": "Крутой бот"
+        "ru": "Магазин одежды на Flask с ботом + парсинг для поиска поставок для дипломной работы",
+        "en": "A Flask-powered clothing store with a bot and parsing feature for searching dissertation supplies"
         }
     },
     {
-        "name": { "ru": "Проект3", "en": "Projects3" },
-        "image": "images/zxc.jpg",
+        "name": { "ru": "WastedTime", "en": "WastedTime" },
+        "image": "images/p2.png",
         "info": {
-        "ru": "Крутой бот",
-        "en": "Крутой бот"
+        "ru": "Программа для отслеживания проведённого время за ПК",
+        "en": "A program for tracking time spent on a PC"
         }
     },
     {
-        "name": { "ru": "Проект4", "en": "Projects4" },
-        "image": "images/zxc.jpg",
+        "name": { "ru": "Плеер мзыки", "en": "Music player" },
+        "image": "images/p1.png",
         "info": {
-        "ru": "Крутой бот",
-        "en": "Крутой бот"
+        "ru": "Сейчас в разработке",
+        "en": "Currently in development"
         }
     }
 ]

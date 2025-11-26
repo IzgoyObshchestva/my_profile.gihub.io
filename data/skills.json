@@ -136,7 +136,7 @@
   },
   {
     "name": { "ru": "JSON", "en": "JSON" },
-    "level": { "ru": "Базовый", "en": "Basic" },
+    "level": { "ru": "Средний", "en": "Intermediate" },
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/1200px-JSON_vector_logo.svg.png",
     "info": {
       "ru": "Текстовый формат обмена данными.",
@@ -154,7 +154,7 @@
   },
   {
     "name": { "ru": "Figma", "en": "Figma" },
-    "level": { "ru": "Базовый", "en": "Basic" },
+    "level": { "ru": "Средний", "en": "Intermediate" },
     "image": "https://blog.greggant.com/images/posts/2019-04-25-figma/Figma.png",
     "info": {
       "ru": "Онлайн-графический редактор.",

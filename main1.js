@@ -76,28 +76,6 @@ function renderSkills() {
     });
 }
 
-const servicesContainer = document.querySelector(".box-services");
-function renderServices() {
-    servicesContainer.innerHTML = "";
-
-    servicesData.forEach(zxc => {
-    const card = document.createElement("div");
-    card.className = "item-services";
-
-    card.innerHTML = `
-        <div class="item-services_box-img">
-            <img class="item-services_img" src="${zxc.image}" alt="${zxc.name[currentLang]}">
-        </div>
-
-        <div class="item-services_box-name">
-            <p class="item-services_name">${zxc.name[currentLang]}</p>
-        </div>
-    `;
-
-    servicesContainer.appendChild(card);
-    });
-}
-
 const projectsContainer = document.querySelector(".slider-projects");
 function renderProjects() {
     projectsContainer.innerHTML = "";
@@ -150,12 +128,10 @@ function toggleLanguage(qwe = true) {
     }
     localStorage.setItem("lang", currentLang);
     renderSkills();
-    renderServices();
     renderProjects();
 
     setLanguageText();
     initProjectsSlider();
-    initReviewsSlider();
 }
 langToggle.addEventListener("click", toggleLanguage);
 
@@ -167,12 +143,8 @@ function setLanguageText() {
     const titleProjects = document.getElementById("Projects");
     const Projects_name = titleProjects.querySelector(".container-name");
 
-    const titleServices = document.getElementById("Services");
-    const Services_name = titleServices.querySelector(".container-name");
-
-    Technologies_name.textContent = currentLang === "ru" ? "Технологии" : "Technologies";
+    Technologies_name.textContent = currentLang === "ru" ? "Навыки" : "Skills";
     Projects_name.textContent = currentLang === "ru" ? "Проекты" : "Projects";
-    Services_name.textContent = currentLang === "ru" ? "Услуги" : "Services";
 
     const searchTechnologies = document.getElementById('search-input')
     searchTechnologies.placeholder = currentLang === "ru" ? "Поиск..." : "Search...";
@@ -180,18 +152,17 @@ function setLanguageText() {
 
     const menu_box = document.querySelector(".menu_box-navigation");
     const list_item_menu = menu_box.querySelectorAll(".button-menu")
-    list_item_menu[0].textContent = currentLang === "ru" ? "Технологии" : "Technologies";
-    list_item_menu[1].textContent = currentLang === "ru" ? "Проекты" : "Projects";
-    list_item_menu[2].textContent = currentLang === "ru" ? "Отзывы" : "Reviews";
-    list_item_menu[3].textContent = currentLang === "ru" ? "Услуги" : "Services"; 
-
+    list_item_menu[0].textContent = currentLang === "ru" ? "Обо мне" : "About me"; 
+    list_item_menu[1].textContent = currentLang === "ru" ? "Навыки" : "Skills";
+    list_item_menu[2].textContent = currentLang === "ru" ? "Проекты" : "Projects";
+    
     const buttonLang = document.getElementById("langToggle");
     buttonLang.textContent = currentLang === "ru" ? "EN" : "RU";
 
     const header_box = document.querySelector(".header-text-box");
     const list_item_text = header_box.querySelectorAll(".text");
 
-    console.log(list_item_text)
+    // console.log(list_item_text)
     list_item_text[0].textContent = currentLang === "ru" ? "Обо мне:" : "About me:";
     list_item_text[1].textContent = currentLang === "ru" ? "Программирую с настоящим кайфом — особенно когда получается создать что-то новое и полезное. К коду подхожу ответственно: тестирую, рефакторю, пока не станет идеально. Обожаю разбираться в незнакомых технологиях ради решения сложных задач. Мечтаю работать в команде, где люди поддерживают друг друга и вместе делают продукты, которыми можно гордиться." : "I truly enjoy programming, especially when I create something new and useful. I approach my code responsibly: I test and refactor until it's perfect. I love figuring out unfamiliar technologies to solve complex problems. I dream of working in a team where people support each other and together create products they can be proud of.";
 }
@@ -203,14 +174,6 @@ fetch("data/skills.json")
     .then(data => {
     skillsData = data;
     renderSkills();
-    })
-    .catch(err => console.error("Ошибка загрузки JSON:", err));
-
-fetch("data/services.json")
-    .then(response => response.json())
-    .then(data => {
-    servicesData = data;
-    renderServices();
     })
     .catch(err => console.error("Ошибка загрузки JSON:", err));
 
