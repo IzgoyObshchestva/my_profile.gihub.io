@@ -109,7 +109,7 @@
   },
   {
     "name": { "ru": "HTML", "en": "HTML" },
-    "level": { "ru": "Базовый", "en": "Basic" },
+    "level": { "ru": "Средний", "en": "Intermediate" },
     "image": "https://cdn-icons-png.flaticon.com/512/3128/3128323.png",
     "info": {
       "ru": "Инструмент для создания структуры веб-страниц.",
