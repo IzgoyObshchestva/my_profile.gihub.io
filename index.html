@@ -5,185 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Изгой</title>
     <link rel="stylesheet" href="style_zero.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="zxc.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
 </head>
-<body id="body">
-<div class="zxc">
-    <div class="menu_container_burger none">
-        <div class="menu_box_burger">
-            <button class="button-close-menu">
-                <img src="images/close_menu_icon_darker.png" alt="" id="button-close">
-            </button>
-            <div class="menu_burger_button">
-                <a class="menu_burger_button_item" href="#zxczxc">Обо мне</a>
-                <a class="menu_burger_button_item" href="#Technologies">Навыки</a>
-                <a class="menu_burger_button_item" href="#Projects">Проекты</a>
-            </div>
-        </div>
-    </div>
-    <menu class="menu">
-        <div class="logo">
-            <img src="images/logo.png" alt="" class="logo-img">
-        </div>
+<body class="w-container">
 
-        
+<div class="section">
+    <div class="box">
 
-        <div class="menu_box-navigation">
-            <a class="button-menu" href="#zxczxc">Обо мне</a>
-            <a class="button-menu" href="#Technologies">Навыки</a>
-            <a class="button-menu" href="#Projects">Проекты</a>
-        </div>
-
-
-        <div class="box-button">
-            <button class="button-menu none" id="menu_burger">
-                <img src="images/burger_menu_icon_darker.png" alt="" class="button-menu_img">
-            </button>
-            <button class="button-menu" id="themeToggle">
-                <img src="images/light_theme.png" alt="" class="button-menu_img themeToggleImg">
-            </button>
-            <button class="button-menu" id="langToggle">
-                EN
-            </button>
-        </div>
-    </menu>
-
-    <header class="header">
-        <div class="header-foto">
-            <img src="images/quiet.png" alt="" class="header-foto-img">
-        </div>
-
-        <div class="header-text-box">
-            <div id="zxczxc" class="text text-H">Обо мне:</div>
-            <div class="text">Программирую с настоящим кайфом — особенно когда получается создать что-то новое и полезное. К коду подхожу ответственно: тестирую, рефакторю, пока не станет идеально. Обожаю разбираться в незнакомых технологиях ради решения сложных задач. Мечтаю работать в команде, где люди поддерживают друг друга и вместе делают продукты, которыми можно гордиться.</div>
-        </div>
-    </header>
-
-    <div id="Buttons" class="container-button">
-        <a href="https://github.com/IzgoyObshchestva" class="container-button-item github">
-            <img class="container-button-item_img" src="https://www.icescrum.com/wp-content/uploads/2018/10/github.png" alt="">
-        </a>
-    </div>
-
-    <div id="Technologies" class="container">
-        <h2 class="h2 toggle-header qqq">
-            <span>
-                <span class="indicator">▽</span> 
-                <span class="container-name">Навыки:</span>
-            </span>
-            <input type="text" id="search-input" placeholder="Поиск..." />
+        <h2 class="h2">
+        Hello world!<br>
+        I'm <span id="typing"></span>
         </h2>
-        <div class="line"></div>
-        <div id="skills" class="box-skills box-items">
 
-            <div class="box-skills-item">
-                <div class="box-skills-item_box-img">
-                    <img class="box-skills-item_img" src="images/python.jpg" alt="">
-                </div>
-
-                <div class="box-skills-item_box-text">
-                    <span class="skill-name">
-                        Python
-                        <span class="tag lvl_3">Продвинутый</span>
-                    </span>
-                    <span class="skill-description">Опыт написания backend на FastAPI, Django, скриптов для автоматизации.</span>
-                </div>
-            </div>
-
-
-            <div class="box-skills-item">
-                <div class="box-skills-item_box-img">
-                    <img class="box-skills-item_img" src="images/python.jpg" alt="">
-                </div>
-
-                <div class="box-skills-item_box-text">
-                    <span class="skill-name">
-                        Python
-                        <span class="tag lvl_2">Средний</span>
-                    </span>
-                    <span class="skill-description">Опыт написания backend на FastAPI, Django, скриптов для автоматизации.</span>
-                </div>
-            </div>
-
-
-            <div class="box-skills-item">
-                <div class="box-skills-item_box-img">
-                    <img class="box-skills-item_img" src="/images/python.jpg" alt="">
-                </div>
-
-                <div class="box-skills-item_box-text">
-                    <span class="skill-name">Python
-                        <span class="tag lvl_1">Базовый</span>
-                    </span>
-                    <span class="skill-description">Опыт написания backend на FastAPI, Django, скриптов для автоматизации.</span>
-                </div>
-            </div>
-
-        </div>
     </div>
-
-    <div id="Projects" class="container">
-        <h2 class="h2 toggle-header">
-            <span class="indicator">▽</span>
-            <span class="container-name">Проекты:</span>
-        </h2>
-        <div class="line"></div>
-        <div class="box-projects box-items">
-            <button class="button-slider left">
-                <img class="button-slider-img" src="images/button-slider.png" alt="">
-            </button>
-            
-            <div class="slider-track slider-projects">
-                <a class="card-projects" href="">
-                    <div class="card-projects_box-img">
-                        <img class="card-projects_img" src="images/zxc.jpg" alt="">
-                    </div>
-                    <div class="card-projects_box-text">
-                        <h3 class="h3">Телеграм бот 0</h3>
-                        <p class="p">Ахуенный тг бот</p>
-                    </div>
-                </a>
-
-                <a class="card-projects" href="">
-                    <div class="card-projects_box-img">
-                        <img class="card-projects_img" src="images/zxc.jpg" alt="">
-                    </div>
-                    <div class="card-projects_box-text">
-                        <h3 class="h3">Телеграм бот 1</h3>
-                        <p class="p">Ахуенный тг бот</p>
-                    </div>
-                </a>
-
-                <a class="card-projects" href="">
-                    <div class="card-projects_box-img">
-                        <img class="card-projects_img" src="images/zxc.jpg" alt="">
-                    </div>
-                    <div class="card-projects_box-text">
-                        <h3 class="h3">Телеграм бот 2</h3>
-                        <p class="p">Ахуенный тг бот</p>
-                    </div>
-                </a>
-
-                <a class="card-projects" href="">
-                    <div class="card-projects_box-img">
-                        <img class="card-projects_img" src="images/zxc.jpg" alt="">
-                    </div>
-                    <div class="card-projects_box-text">
-                        <h3 class="h3">Телеграм бот 3</h3>
-                        <p class="p">Ахуенный тг бот</p>
-                    </div>
-                </a>
-            </div>
-
-            <button class="button-slider right">
-                <img class="button-slider-img" src="images/button-slider.png" alt="">
-            </button>
-        </div>
-    </div>
-
 </div>
 
-<script src="main1.js"></script>
+<!-- <div class="section ww">
+    <h3 class="h2">Блок</h3>
+</div> -->
+
+<div class="section">
+    <div class="experience-box">
+        <h3 class="experience-item">Что я делал:</h3>
+        <p class="experience-item">▸ Telegram-боты (aiogram 3)</p>
+        <p class="experience-item">▸ backend-сервисы (FastAPI + PostgreSQL)</p>
+        <p class="experience-item">▸ desktop-приложения (Eel)</p>
+        <p class="experience-item">▸ веб + бот (Flask + Aiogram)</p>
+        <p class="experience-item">▸ парсинг данных</p>
+    </div>
+</div>
+
+<div class="section aa" id="prodject">
+    
+</div>
+
+<div class="section sss-box">
+    <input id="search-input" class="input-skills" type="text" placeholder="поиск">
+
+    <section class="skills">
+        <div class="marquee">
+            <div class="track left">
+            
+            </div>
+        </div>
+
+        <div class="marquee">
+            <div class="track right">
+            
+            </div>
+        </div>
+
+        <div class="marquee">
+            <div class="track left">
+            
+            </div>
+        </div>
+
+        <div class="marquee">
+            <div class="track right">
+            
+            </div>
+        </div>
+    </section>
+
+    <div class="sss">
+        <img src="./images/Group 6.png" alt="">
+    </div>
+</div>
+
+<div class="section">
+    <a class="btn" href="https://github.com/IzgoyObshchestva">
+        <img class="" src="./images/githab3.png" alt="">
+    </a>
+</div>
+
+<script src="./main2.js"></script>
 </body>
 </html>

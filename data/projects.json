@@ -1,34 +1,22 @@
 [
     {
-        "name": { "ru": "Сайт визитка", "en": "Business card website" },
-        "image": "images/zxc.jpg",
-        "info": {
-        "ru": "Этот сайт я сделал сам",
-        "en": "I made this site myself"
-        }
+        "name": "Сайт визитка",
+        "image": "test.gif",
+        "info":  "Этот сайт я сделал сам"
     },
     {
-        "name": { "ru": "Магазин одежды", "en": "Clothing store" },
-        "image": "images/zxc.jpg",
-        "info": {
-        "ru": "Магазин одежды на Flask с ботом + парсинг для поиска поставок для дипломной работы",
-        "en": "A Flask-powered clothing store with a bot and parsing feature for searching dissertation supplies"
-        }
+        "name": "Магазин одежды",
+        "image": "test.gif",
+        "info": "Магазин одежды на Flask с ботом + парсинг для поиска поставок для дипломной работы"
     },
     {
-        "name": { "ru": "WastedTime", "en": "WastedTime" },
-        "image": "images/p2.png",
-        "info": {
-        "ru": "Программа для отслеживания проведённого время за ПК",
-        "en": "A program for tracking time spent on a PC"
-        }
+        "name": "WastedTime",
+        "image": "test.gif",
+        "info": "Программа для отслеживания проведённого время за ПК"
     },
     {
-        "name": { "ru": "Плеер мзыки", "en": "Music player" },
-        "image": "images/p1.png",
-        "info": {
-        "ru": "Сейчас в разработке",
-        "en": "Currently in development"
-        }
+        "name": "Плеер мзыки",
+        "image": "test.gif",
+        "info": "Сейчас в разработке"
     }
 ]

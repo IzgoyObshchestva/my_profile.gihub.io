@@ -1,164 +1,19 @@
 [
-  {
-    "name": { "ru": "Python", "en": "Python" },
-    "level": { "ru": "Продвинутый", "en": "Advanced" },
-    "image": "https://images.icon-icons.com/2699/PNG/512/python_logo_icon_168886.png",
-    "info": {
-      "ru": "Опыт написания backend на FastAPI, Django, скриптов для автоматизации. ",
-      "en": "Experience with backend development in FastAPI, Django, and automation scripts."
-    }
-  },
-  {
-    "name": { "ru": "Git", "en": "Git" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://avatars.githubusercontent.com/u/18133?s=200&v=4",
-    "info": {
-      "ru": "Использую для фронтенда, работал с HTMX и Tailwind.",
-      "en": "Used for frontend, worked with HTMX and Tailwind."
-    }
-  },
-  {
-    "name": { "ru": "SQL", "en": "SQL" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://ms-mssql.gallerycdn.vsassets.io/extensions/ms-mssql/mssql/1.35.0/1755720455687/Microsoft.VisualStudio.Services.Icons.Default",
-    "info": {
-      "ru": "Работа с PostgreSQL и SQLite.",
-      "en": "Worked with PostgreSQL and SQLite."
-    }
-  },
-  {
-    "name": { "ru": "FastAPI", "en": "FastAPI" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://avatars.githubusercontent.com/u/156354296?s=280&v=4",
-    "info": {
-      "ru": "Библиотека Python для написание backend.",
-      "en": "Python library for writing backend."
-    }
-  },
-  {
-    "name": { "ru": "python-dotenv", "en": "python-dotenv" },
-    "level": { "ru": "Средний", "en": "Intermediate" },
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHaNT3Fi8RMNUpPDk-Zddeo2FTvDN3Sye5AA&s",
-    "info": {
-      "ru": "Библиотека Python для переменного окружения.",
-      "en": "Python library for environment variables."
-    }
-  },
-  {
-    "name": { "ru": "JavaScript", "en": "JavaScript" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
-    "info": {
-      "ru": "Очень базове знания на уровне чтения и не большого исправления.",
-      "en": "Очень базове знания на уровне чтения и не большого исправления."
-    }
-  },
-  {
-    "name": { "ru": "Aiogram 3", "en": "Aiogram 3" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://docs.aiogram.dev/en/v3.22.0/_static/logo.png",
-    "info": {
-      "ru": "Библиотека Python для создания телеграм ботов.",
-      "en": "Python library for creating Telegram bots."
-    }
-  },
-  {
-    "name": { "ru": "PySide6", "en": "PySide6" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Pyside.png",
-    "info": {
-      "ru": "Библиотека Python для создания десктопных приложений.",
-      "en": "A Python library for creating desktop applications."
-    }
-  },
-  {
-    "name": { "ru": "Poetry", "en": "Poetry" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://avatars.githubusercontent.com/u/48722593?s=200&v=4",
-    "info": {
-      "ru": "менеджер зависимости Python.",
-      "en": "Python dependency manager."
-    }
-  },
-  {
-    "name": { "ru": "SQLAlchemy", "en": "SQLAlchemy" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://buildwithlayer.gallerycdn.vsassets.io/extensions/buildwithlayer/sqlalchemy-integration-expert-jyszg/0.0.13/1740523961608/Microsoft.VisualStudio.Services.Icons.Default",
-    "info": {
-      "ru": "библиотека Python для упрощения написания sql запросов.",
-      "en": "A Python library for simplifying writing SQL queries."
-    }
-  },
-  {
-    "name": { "ru": "Postgresql", "en": "Postgresql" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
-    "info": {
-      "ru": "Реляционная База данных.",
-      "en": "Relational Database."
-    }
-  },
-  {
-    "name": { "ru": "SQLite 3", "en": "SQLite 3" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://images.icon-icons.com/2107/PNG/512/file_type_sqlite_icon_130153.png",
-    "info": {
-      "ru": "Реляционная База данных.",
-      "en": "Relational Database."
-    }
-  },
-  {
-    "name": { "ru": "HTML", "en": "HTML" },
-    "level": { "ru": "Средний", "en": "Intermediate" },
-    "image": "https://cdn-icons-png.flaticon.com/512/3128/3128323.png",
-    "info": {
-      "ru": "Инструмент для создания структуры веб-страниц.",
-      "en": "A tool for creating web page structure."
-    }
-  },
-  {
-    "name": { "ru": "CSS", "en": "CSS" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://cdn-icons-png.flaticon.com/512/732/732190.png",
-    "info": {
-      "ru": "Описание стилей HTML документов.",
-      "en": "Description of HTML document styles."
-    }
-  },
-  {
-    "name": { "ru": "Pydantic", "en": "Pydantic" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://avatars.githubusercontent.com/u/110818415?s=200&v=4",
-    "info": {
-      "ru": "Библиотека  Python для валидации и управления данными.",
-      "en": "Python library for data validation and management."
-    }
-  },
-  {
-    "name": { "ru": "JSON", "en": "JSON" },
-    "level": { "ru": "Средний", "en": "Intermediate" },
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/1200px-JSON_vector_logo.svg.png",
-    "info": {
-      "ru": "Текстовый формат обмена данными.",
-      "en": "Text-based data interchange format."
-    }
-  },
-  {
-    "name": { "ru": "Pillow", "en": "Pillow" },
-    "level": { "ru": "Базовый", "en": "Basic" },
-    "image": "https://python-pillow.github.io/assets/images/pillow-logo-248x250.png",
-    "info": {
-      "ru": "Библиотека Python для работы с изображениями.",
-      "en": "Python library for working with images."
-    }
-  },
-  {
-    "name": { "ru": "Figma", "en": "Figma" },
-    "level": { "ru": "Средний", "en": "Intermediate" },
-    "image": "https://blog.greggant.com/images/posts/2019-04-25-figma/Figma.png",
-    "info": {
-      "ru": "Онлайн-графический редактор.",
-      "en": "Online graphic editor."
-    }
-  }
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Python",
+    "SQLite",
+    "PostgreSQL",
+    "Git",
+    "JSON",
+    "FastAPI",
+    "Pydantic",
+    "python-dotenv",
+    "Poetry",
+    "Aiogram 3",
+    "SQLAlchemy",
+    "Eel",
+    "JWT",
+    "Pillow"
 ]
